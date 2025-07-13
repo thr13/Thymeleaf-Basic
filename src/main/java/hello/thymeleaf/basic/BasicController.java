@@ -103,7 +103,7 @@ public class BasicController {
         return "basic/attribute";
     }
 
-    @GetMapping()
+    @GetMapping("/each")
     public String each(Model model) {
         addUsers(model);
 
