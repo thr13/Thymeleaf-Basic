@@ -144,6 +144,11 @@ public class BasicController {
         return "template/layout/layoutMain";
     }
 
+    @GetMapping("/layoutExtend")
+    public String layoutExtends() {
+        return "layoutFile";
+    }
+
     private void addUsers(Model model) {
         List<User> list = new ArrayList<>();
         list.add(new User("userA", 10));
